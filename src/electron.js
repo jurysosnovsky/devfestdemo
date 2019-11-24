@@ -9,7 +9,7 @@ const createWindow = () => {
         resizable: true,
         center: true,
         show: false,
-        maximizable: false,
+        maximizable: true,
         fullscreenable: false,
         titleBarStyle: "default",
         webPreferences: {
@@ -21,7 +21,6 @@ const createWindow = () => {
     });
 
     mainWindow.loadURL('http://localhost:3000/');
-    //mainWindow.webContents.openDevTools();
 
     mainWindow.once("ready-to-show", () => {
         mainWindow.show();

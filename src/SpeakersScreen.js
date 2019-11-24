@@ -4,7 +4,6 @@ import speakers from "./speakers";
 import SpeakerCard from "./SpeakerCard";
 
 export default function SpeakersScreen() {
-    console.log(speakers);
     return (
         <React.Fragment>
                 {speakers.map(
